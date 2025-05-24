@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>Signup</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #141313;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+    }
+    .signup-container {
+      background:black;
+      padding: 40px;
+      border-radius: 12px;
+      width: 350px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #2a2a2a;
+      color: white;
+      font-size: 14px;
+    }
+    .form-group input::placeholder {
+      color: #aaa;
+    }
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background: rgb(37, 37, 210);
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .signup-btn:hover {
+      background: rgb(89, 89, 215);
+    }
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .login-link a {
+      color:rgb(37, 37, 210);
+      text-decoration: none;
+    }
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+    h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .signup-btn{
+        border-radius: 30px
+    }
+    .form-group{
+        font-weight: bold;
+    }
+    .number{
+      color: rgb(37, 37, 210);
+      font-size: 15px;
+      text-decoration: underline;
+    }
+    .button{
+      width: 100%;
+      padding: 12px;
+      background: black;
+      border: none;
+      border-radius: 28px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      color: white;
+      border: 2px solid rgb(200, 194, 194); 
+
+    }
+  </style>
+</head>
+<body>
+   
+  <div class="signup-container">
+    <h1>Sign up to start listening</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <a href="#" class="number">Use phone number instead </a> <br><br>
+      <button type="submit" class="signup-btn">Next</button> <br><br>
+     <hr>
+      <button type="submit" class="button">Sign up with Google</button>
+      <button type="submit" class="button">Sign up with Facebook</button>
+      <button type="submit" class="button">Sign up with Apple</button> <br><br>
+      <div class="login-link">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
